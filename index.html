@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of the t3chwizard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="logo" href="#home">Ahumuza Tony Bills</a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#background">Background</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-btn" aria-label="Switch light or dark theme">◐</button>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1 class="name" aria-label="John Doe">Ahumuza Tony Bills</h1>
+            <h2 class="role">Web Developer and Designer</h2>
+            <a class="btn" href="#projects">See my work</a>
+        </section>
+
+        <section id="projects" data-reveal>
+            <h3>Portfolio Highlights</h3>
+            <ul class="highlights">
+                <li>Responsive HTML Layout</li>
+                <li>E-commerce Storefront</li>
+                <li>Interactive Form Design</li>
+                <li>Event Countdown Widget</li>
+                <li>Prototype Landing Pages</li>
+            </ul>
+        </section>
+
+        <section id="background" class="split" data-reveal>
+            <div>
+                <h3>Career Achievements</h3>
+                <p>Currently part of a project focused on building a SACCO Management System as a Database Manager</p>
+                <p><a href="#">View My LinkedIn Profile</a></p>
+                <h3>Community Involvement</h3>
+                <p>Active participant in local and online developer forums.</p>
+                <p><a href="#">Visit My GitHub</a></p>
+            </div>
+            <div>
+                <h3>Academic Qualifications</h3>
+                <p>Diploma (Software Engineering) from ISBAT University</p>
+                <p>Specializations:</p>
+                <ul class="chips">
+                    <li>Database Design</li>
+                    <li>Web Accessibility Standards</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="reviews" data-reveal>
+            <h3>Peer Reviews</h3>
+            <div class="quotes">
+                <blockquote>Ahumuza Tony Bills consistently delivers high-quality, innovative solutions that exceed project expectations.<cite>Steven, Project Lead</cite></blockquote>
+                <blockquote>Ahumuza Tony Bills is known for his precise attention to detail and his ability to mentor younger developers.<cite>David, UI Designer</cite></blockquote>
+                <blockquote>Tony's approach to problem-solving has been instrumental in our success.<cite>Sarah, Frontend Developer</cite></blockquote>
+            </div>
+        </section>
+
+        <section id="contact" data-reveal>
+            <h3>Get in touch</h3>
+            <form id="contact-form" novalidate>
+                <label>Name <input name="name" type="text" required></label>
+                <label>Email <input name="email" type="email" required></label>
+                <label>Message <textarea name="message" rows="4" required></textarea></label>
+                <button class="btn" type="submit">Send message</button>
+                <p class="form-msg" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>© <span id="year">2026</span> All rights reserved by The T3chWizard</footer>
+</body>
+</html>
